@@ -101,18 +101,17 @@ class Game{
                   if (player.index !== null) {
                     for (var i = 0; i < fruitGroup.length; i++) {
                         if (fruitGroup.get(i).isTouching(players)) {
-                            fruitGroup.get(i).destroy();
-                         
-                            text(allPlayers[plr].name,x-25,y+25)
+                            fruitGroup.get(i).destroy(); 
                         }
-                       
                     }
                     
                   }
-                
+                  if(index==player.index)
+                  { fill(0)
+                     textSize(20)
+                     text(allPlayers[plr].name ,x-25,y+25);}
 
-       
-       
+    
     }
     
     end(){
